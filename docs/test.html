@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hacker Typing Challenge | HackerSpeed</title>
+  <title>Hacker Typing Challenge | SPEEDHACKER</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="../lib/js/typed.min.js"></script>
   <script src="../lib/js/tailwind.min.js"></script>
@@ -82,11 +82,9 @@
       </div>
 
       <div class="hud-element rounded-lg p-6 mb-6 relative">
-        <!-- MISSION BRIEF ADDED HERE -->
         <div id="missionBrief" class="text-sm text-green-300 mb-3 italic">
           MISSION : Chargement des instructions...
         </div>
-
         <div class="flex justify-between items-center mb-4">
           <h3 class="text-lg font-bold flex items-center">
             <i class="fas fa-terminal mr-2"></i> TRANSMISSION INTERCEPT
@@ -95,10 +93,8 @@
             <i class="fas fa-info-circle mr-1"></i> <span id="wordsCount">0/0</span> WORDS
           </div>
         </div>
-
         <div id="textDisplay" class="text-lg leading-relaxed mb-6 font-share-tech-mono select-none">
         </div>
-
         <div class="relative">
           <input 
             id="input" 
@@ -113,18 +109,15 @@
             </button>
           </div>
         </div>
-
         <div class="w-full bg-gray-800 rounded-full h-2 mt-4">
           <div id="progressBar" class="progress-bar h-2 rounded-full" style="width: 0%"></div>
         </div>
       </div>
-
       <div id="result" class="hud-element rounded-lg p-6 hidden">
         <div class="text-center mb-6">
           <h2 class="text-3xl font-bold mb-2 neon-text">MISSION COMPLETE</h2>
           <p class="text-gray-400">ENCRYPTION PROTOCOL ANALYZED</p>
         </div>
-
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           <div class="text-center">
             <div class="text-5xl font-bold mb-2" id="finalWpm">--</div>
@@ -139,7 +132,6 @@
             <p class="text-gray-400">SCORE</p>
           </div>
         </div>
-
         <div class="mb-6">
           <h4 class="text-lg font-bold mb-2 flex items-center">
             <i class="fas fa-trophy mr-2"></i> PERFORMANCE ANALYSIS
@@ -159,7 +151,6 @@
             </div>
           </div>
         </div>
-
         <div class="flex justify-center">
           <button id="restartBtn" class="bg-gradient-to-r from-green-400 to-blue-500 text-black px-8 py-3 rounded-lg font-bold hover:opacity-90 transition flex items-center">
             <i class="fas fa-redo mr-2"></i> RETRY MISSION
@@ -180,7 +171,5 @@
   </div>
   <script src="../js/script.js"></script>
   <script src="../js/bacground.js"></script>
-
-
 </body>
 </html>
