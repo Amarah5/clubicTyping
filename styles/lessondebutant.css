@@ -1,0 +1,29 @@
+
+body {
+  background-image: radial-gradient(circle at 50% 50%, rgba(0, 255, 65, 0.03) 0%, rgba(0, 0, 0, 0) 50%);
+}
+.terminal-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background-color: #00ff41;
+  animation: blink 1s step-end infinite;
+}
+.cyber-border {
+  position: relative;
+}
+.cyber-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid #00ff41;
+  border-radius: 0.5rem;
+  z-index: -1;
+  opacity: 0.5;
+}
+.cyber-border:hover::before {
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
