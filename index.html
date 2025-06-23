@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neon Typing Challenge | CyberSpeed</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body class="bg-gray-900 text-green-400 font-mono transition-colors duration-300 dark:bg-gray-900">
+  <canvas id="matrixCanvas" class="fixed top-0 left-0 w-full h-full z-0 pointer-events-none opacity-15"></canvas>
+  <header>
+    <div class="scanline relative overflow-hidden">
+      <div class="container mx-auto px-6 py-20 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 neon-text">MAÎTRISEZ LE CLAVIER COMME UN PRO</h1>
+        <p class="text-xl mb-10 max-w-2xl mx-auto">Améliorez votre vitesse et précision avec notre plateforme d'entraînement high-tech</p>
+        <div class="flex flex-col md:flex-row justify-center gap-4 mb-16">
+          <button id="fbLogin" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold flex items-center justify-center">
+            <i class="fab fa-facebook-f mr-3"></i> COMMENCER
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="scanline min-h-screen flex flex-col items-center justify-center p-4 relative overflow-hidden">
+      <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(circle, transparent 70%, rgba(0,20,30,0.7) 100%);"></div>
+      <div class="w-full max-w-4xl mx-auto hud-element rounded-lg p-6 relative z-10">
+        <div class="w-full max-w-4xl mx-auto hud-element rounded-lg p-6 mb-6">
+          <h2 class="text-3xl font-bold mb-6 neon-text text-center">NOS LÉÇONS</h2>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="hud-element p-4 rounded-lg">
+              <div class="text-4xl text-green-400 mb-3"><i class="fas fa-keyboard"></i></div>
+              <h3 class="text-xl font-bold mb-2">Débutant</h3>
+              <p class="text-gray-400 mb-4">Apprenez les bases de la dactylographie</p>
+              <button class="hud-element w-full py-2 rounded-lg">Commencer</button>
+            </div>
+            <div class="hud-element p-4 rounded-lg">
+              <div class="text-4xl text-green-400 mb-3"><i class="fas fa-tachometer-alt"></i></div>
+              <h3 class="text-xl font-bold mb-2">Intermédiaire</h3>
+              <p class="text-gray-400 mb-4">Améliorez votre vitesse</p>
+              <button class="hud-element w-full py-2 rounded-lg">Commencer</button>
+            </div>
+            <div class="hud-element p-4 rounded-lg">
+              <div class="text-4xl text-green-400 mb-3"><i class="fas fa-medal"></i></div>
+              <h3 class="text-xl font-bold mb-2">Expert</h3>
+              <p class="text-gray-400 mb-4">Devenez un maître du clavier</p>
+              <button class="hud-element w-full py-2 rounded-lg">Commencer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="text-center text-xs text-gray-500 mt-6">
+    <p>SPEEDHACKER TYPING PROTOCOL v2.4.7 | SECURITY CLEARANCE: ALPHA</p>
+    <p class="mt-1">© 2089 NEON NETWORK SYSTEMS</p>
+  </footer>
+  <script src="./js/bacground.js"></script>
+</body>
+</html>
